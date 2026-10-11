@@ -1,0 +1,271 @@
+{
+  "report_metadata": {
+    "title": "Final Research Summary: Ablation Studies & Empirical Results",
+    "scope": "Empirical Research Evaluation",
+    "evaluation_id": "ablation_matrix_execution",
+    "total_experiments": 9,
+    "successful_experiments": 9,
+    "failed_experiments": 0,
+    "master_manifest": "outputs/results/ablation_execution_master_manifest.json",
+    "reported_total_runtime_seconds": 2950.54,
+    "sum_individual_runtimes_seconds": 2948.98,
+    "harness_overhead_seconds": 1.56
+  },
+  "experimental_matrix": {
+    "EXP_01_BASELINE": {
+      "name": "EXP_01_BASELINE",
+      "category": "Baseline",
+      "purpose": "Baseline reference evaluation run with default thresholds, weights, and all metrics enabled.",
+      "parameter_overrides": {},
+      "controlled_variables": {
+        "seed": 42,
+        "sample_size": 100,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6,
+        "cause_weight": 0.45,
+        "effect_weight": 0.45,
+        "relation_weight": 0.1
+      },
+      "sample_size": 100,
+      "examples_processed": 6,
+      "runtime_seconds": 706.99,
+      "metrics": {
+        "mean_cause_similarity": 0.2273,
+        "mean_effect_similarity": 0.2777,
+        "mean_overall_alignment_score": 0.3195,
+        "benchmark_agreement_rate": 0.8333,
+        "summac_mean_delta": 0.0023,
+        "factcc_mean_delta": -0.0015,
+        "bertscore_mean_f1": 0.9698,
+        "bertscore_mean_loss": 0.0302
+      },
+      "status": "SUCCESS"
+    },
+    "EXP_02_THRESH_PERMISSIVE": {
+      "name": "EXP_02_THRESH_PERMISSIVE",
+      "category": "Similarity Threshold Ablation",
+      "purpose": "Permissive similarity thresholds to evaluate false positive and recall trade-offs.",
+      "parameter_overrides": {
+        "cause_threshold": 0.35,
+        "effect_threshold": 0.35,
+        "overall_threshold": 0.45
+      },
+      "controlled_variables": {
+        "seed": 42,
+        "sample_size": 100,
+        "cause_weight": 0.45,
+        "effect_weight": 0.45,
+        "relation_weight": 0.1
+      },
+      "sample_size": 100,
+      "examples_processed": 6,
+      "runtime_seconds": 305.07,
+      "metrics": {
+        "mean_overall_alignment_score": 0.3195,
+        "alignment_score_abs_diff": 0.0,
+        "alignment_score_rel_diff_pct": 0.0,
+        "benchmark_agreement_rate": 0.8333,
+        "summac_mean_delta": 0.0023,
+        "factcc_mean_delta": -0.0015,
+        "bertscore_mean_f1": 0.9698
+      },
+      "status": "SUCCESS"
+    },
+    "EXP_03_THRESH_STRICT": {
+      "name": "EXP_03_THRESH_STRICT",
+      "category": "Similarity Threshold Ablation",
+      "purpose": "Strict similarity thresholds to evaluate false negative and precision trade-offs.",
+      "parameter_overrides": {
+        "cause_threshold": 0.65,
+        "effect_threshold": 0.65,
+        "overall_threshold": 0.75
+      },
+      "controlled_variables": {
+        "seed": 42,
+        "sample_size": 100,
+        "cause_weight": 0.45,
+        "effect_weight": 0.45,
+        "relation_weight": 0.1
+      },
+      "sample_size": 100,
+      "examples_processed": 6,
+      "runtime_seconds": 310.22,
+      "metrics": {
+        "mean_overall_alignment_score": 0.3195,
+        "alignment_score_abs_diff": 0.0,
+        "alignment_score_rel_diff_pct": 0.0,
+        "benchmark_agreement_rate": 0.8333,
+        "summac_mean_delta": 0.0023,
+        "factcc_mean_delta": -0.0015,
+        "bertscore_mean_f1": 0.9698
+      },
+      "status": "SUCCESS"
+    },
+    "EXP_04_WEIGHT_EQUAL": {
+      "name": "EXP_04_WEIGHT_EQUAL",
+      "category": "Weighting Model Ablation",
+      "purpose": "Equal component weighting across cause, effect, and relation connective type.",
+      "parameter_overrides": {
+        "cause_weight": 0.33,
+        "effect_weight": 0.33,
+        "relation_weight": 0.34
+      },
+      "controlled_variables": {
+        "seed": 42,
+        "sample_size": 100,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6
+      },
+      "sample_size": 100,
+      "examples_processed": 6,
+      "runtime_seconds": 307.39,
+      "metrics": {
+        "mean_overall_alignment_score": 0.501,
+        "alignment_score_abs_diff": 0.1815,
+        "alignment_score_rel_diff_pct": 56.81,
+        "summac_mean_delta": -0.0092,
+        "factcc_mean_delta": -0.0015,
+        "bertscore_mean_f1": 0.9698
+      },
+      "status": "SUCCESS"
+    },
+    "EXP_05_WEIGHT_ARG_ONLY": {
+      "name": "EXP_05_WEIGHT_ARG_ONLY",
+      "category": "Weighting Model Ablation",
+      "purpose": "Cause and effect argument similarity only with relation connective zero-weighted.",
+      "parameter_overrides": {
+        "cause_weight": 0.5,
+        "effect_weight": 0.5,
+        "relation_weight": 0.0
+      },
+      "controlled_variables": {
+        "seed": 42,
+        "sample_size": 100,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6
+      },
+      "sample_size": 100,
+      "examples_processed": 6,
+      "runtime_seconds": 304.55,
+      "metrics": {
+        "mean_overall_alignment_score": 0.2525,
+        "alignment_score_abs_diff": -0.067,
+        "alignment_score_rel_diff_pct": -20.97,
+        "summac_mean_delta": 0.0005,
+        "factcc_mean_delta": -0.0015,
+        "bertscore_mean_f1": 0.9698
+      },
+      "status": "SUCCESS"
+    },
+    "EXP_06_ABLATE_SUMMAC": {
+      "name": "EXP_06_ABLATE_SUMMAC",
+      "category": "Individual Component Ablation",
+      "purpose": "Evaluate system behavior and execution speedup when SummaCConv metric is disabled.",
+      "parameter_overrides": {
+        "summac_enabled": false
+      },
+      "controlled_variables": {
+        "seed": 42,
+        "sample_size": 100
+      },
+      "sample_size": 100,
+      "examples_processed": 6,
+      "runtime_seconds": 147.28,
+      "metrics": {
+        "mean_overall_alignment_score": 0.3195,
+        "summac_mean_delta": null,
+        "factcc_mean_delta": -0.0015,
+        "bertscore_mean_f1": 0.9698
+      },
+      "status": "SUCCESS"
+    },
+    "EXP_07_ABLATE_FACTCC": {
+      "name": "EXP_07_ABLATE_FACTCC",
+      "category": "Individual Component Ablation",
+      "purpose": "Evaluate system behavior when FactCC factual consistency metric is disabled.",
+      "parameter_overrides": {
+        "factcc_enabled": false
+      },
+      "controlled_variables": {
+        "seed": 42,
+        "sample_size": 100
+      },
+      "sample_size": 100,
+      "examples_processed": 6,
+      "runtime_seconds": 298.11,
+      "metrics": {
+        "mean_overall_alignment_score": 0.3195,
+        "summac_mean_delta": 0.0003,
+        "factcc_mean_delta": null,
+        "bertscore_mean_f1": 0.9698
+      },
+      "status": "SUCCESS"
+    },
+    "EXP_08_ABLATE_BERTSCORE": {
+      "name": "EXP_08_ABLATE_BERTSCORE",
+      "category": "Individual Component Ablation",
+      "purpose": "Evaluate system behavior when BERTScore semantic similarity metric is disabled.",
+      "parameter_overrides": {
+        "bertscore_enabled": false
+      },
+      "controlled_variables": {
+        "seed": 42,
+        "sample_size": 100
+      },
+      "sample_size": 100,
+      "examples_processed": 6,
+      "runtime_seconds": 569.21,
+      "metrics": {
+        "mean_overall_alignment_score": 0.3195,
+        "summac_mean_delta": 0.0022,
+        "factcc_mean_delta": -0.0015,
+        "bertscore_mean_f1": null
+      },
+      "status": "SUCCESS"
+    },
+    "EXP_09_HUMAN_CORRELATION": {
+      "name": "EXP_09_HUMAN_CORRELATION",
+      "category": "Evaluation Metric Comparison",
+      "purpose": "Evaluate statistical correlation between baseline automated metrics and consensus human annotations.",
+      "parameter_overrides": {},
+      "controlled_variables": {
+        "seed": 42,
+        "binary_mapping_enabled": true
+      },
+      "sample_size": 12,
+      "examples_processed": 6,
+      "runtime_seconds": 0.16,
+      "human_validation_results": {
+        "total_records_ingested": 12,
+        "disagreed_records_excluded": 6,
+        "consensus_records_analyzed": 6,
+        "pearson_r_score_delta_vs_naturalness": -0.3162,
+        "spearman_rho_score_delta_vs_naturalness": -0.3162,
+        "binary_distortion_correlation": "undefined_constant_target_vector"
+      },
+      "status": "SUCCESS"
+    }
+  },
+  "key_findings": [
+    "Component weighting is the primary leverage point altering composite alignment score magnitude (+56.81% for equal weights, -20.97% for argument-only weights).",
+    "Threshold changes alter candidate re-classification boundaries without modifying raw embedding similarities.",
+    "SummaCConv is the main computational bottleneck (~80% of metric calculation time); disabling it yields a 79.17% overall pipeline runtime reduction (and an 86.27% metric stage speedup).",
+    "Ablated metrics log as None/ABLATED without causing schema failures or false zero-fill artifacts.",
+    "Human correlation against binary distortion target is mathematically undefined due to constant ground-truth labels across n=6 controlled perturbations."
+  ],
+  "confirmed_limitations": [
+    "Small development benchmark sample size (n=6 valid perturbations from n=100 XSum documents).",
+    "Small consensus human validation sample size (n=6 consensus pairs).",
+    "Zero-variance target vector in controlled benchmark prevents binary correlation calculation.",
+    "Rule-based causal extraction primarily identifies explicit connectives and skips implicit causality.",
+    "General-purpose NLI metrics (SummaC, FactCC) exhibit low sensitivity to subtle causal phrase modifications."
+  ],
+  "future_work_proposals": [
+    "Proposal A: Scale controlled benchmark generation to n=500+ validated perturbations across multi-domain datasets.",
+    "Proposal B: Fine-tune cross-encoder NLI models specifically on causal argument pair datasets.",
+    "Proposal C: Collect balanced crowd annotations including non-distorted baseline summary controls to eliminate zero-variance targets."
+  ]
+}

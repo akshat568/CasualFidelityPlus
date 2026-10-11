@@ -1,0 +1,27 @@
+{
+  "pipeline_info": {
+    "phase": "Phase 6 — Controlled Causal Perturbation Engine",
+    "method": "rule_based"
+  },
+  "counts": {
+    "documents_examined": 100,
+    "summaries_examined": 100,
+    "phase3_source_relations_examined": 51,
+    "relations_eligible_for_summary_perturbation": 2,
+    "relations_skipped_not_present_in_summary": 49,
+    "generated_perturbations": 10,
+    "valid_perturbations": 10,
+    "invalid_perturbations": 0,
+    "skipped_perturbations": 49
+  },
+  "counts_by_type": {
+    "REVERSED": 2,
+    "WEAKENED": 2,
+    "DROPPED": 2,
+    "CAUSE_CHANGED": 2,
+    "EFFECT_CHANGED": 2
+  },
+  "rejection_reasons": {
+    "relation_not_explicitly_present_in_summary": 49
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "summary_metadata": {
+    "scope": "Ablation Studies & Research Results",
+    "evaluation": "Results Analysis & Synthesis",
+    "execution_id": "ablation_matrix_execution",
+    "master_manifest_path": "outputs/results/ablation_execution_master_manifest.json",
+    "total_experiments_analyzed": 9,
+    "successful_experiments": 9,
+    "failed_experiments": 0,
+    "reported_total_runtime_seconds": 2950.54,
+    "sum_individual_runtimes_seconds": 2948.98,
+    "runtime_discrepancy_seconds": 1.56,
+    "discrepancy_reconciliation": "1.56s difference represents Python harness loop overhead (logging, directory safety checks, manifest writing) across 9 iterations."
+  },
+  "baseline_reference_values": {
+    "experiment_id": "EXP_01_BASELINE",
+    "cause_threshold": 0.5,
+    "effect_threshold": 0.5,
+    "overall_threshold": 0.6,
+    "cause_weight": 0.45,
+    "effect_weight": 0.45,
+    "relation_weight": 0.1,
+    "mean_cause_similarity": 0.2273,
+    "mean_effect_similarity": 0.2777,
+    "mean_overall_alignment_score": 0.3195,
+    "alignment_counts": {
+      "aligned_count": 0,
+      "ambiguous_count": 0,
+      "below_threshold_count": 5,
+      "no_candidate_count": 46
+    },
+    "benchmark_agreement_rate": 0.8333,
+    "summac_mean_delta": 0.0023,
+    "factcc_mean_delta": -0.0015,
+    "bertscore_mean_f1": 0.9698,
+    "bertscore_mean_similarity_loss": 0.0302,
+    "pipeline_runtime_seconds": 706.99
+  },
+  "experiment_comparisons": {
+    "EXP_01_BASELINE": {
+      "category": "Baseline",
+      "overrides": {},
+      "alignment_overall_mean": 0.3195,
+      "alignment_overall_abs_diff": 0.0,
+      "alignment_overall_rel_diff_pct": 0.0,
+      "summac_mean_delta": 0.0023,
+      "factcc_mean_delta": -0.0015,
+      "bertscore_mean_f1": 0.9698,
+      "bertscore_mean_loss": 0.0302,
+      "runtime_seconds": 706.99,
+      "runtime_abs_diff": 0.0,
+      "runtime_rel_diff_pct": 0.0,
+      "sample_size": 100,
+      "examples_processed": 6,
+      "status": "SUCCESS"
+    },
+    "EXP_02_THRESH_PERMISSIVE": {
+      "category": "Similarity Threshold Ablation",
+      "overrides": {
+        "cause_threshold": 0.35,
+        "effect_threshold": 0.35,
+        "overall_threshold": 0.45
+      },
+      "alignment_overall_mean": 0.3195,
+      "alignment_overall_abs_diff": 0.0,
+      "alignment_overall_rel_diff_pct": 0.0,
+      "summac_mean_delta": 0.0023,
+      "factcc_mean_delta": -0.0015,
+      "bertscore_mean_f1": 0.9698,
+      "bertscore_mean_loss": 0.0302,
+      "runtime_seconds": 305.07,
+      "runtime_abs_diff": -401.92,
+      "runtime_rel_diff_pct": -56.85,
+      "sample_size": 100,
+      "examples_processed": 6,
+      "status": "SUCCESS"
+    },
+    "EXP_03_THRESH_STRICT": {
+      "category": "Similarity Threshold Ablation",
+      "overrides": {
+        "cause_threshold": 0.65,
+        "effect_threshold": 0.65,
+        "overall_threshold": 0.75
+      },
+      "alignment_overall_mean": 0.3195,
+      "alignment_overall_abs_diff": 0.0,
+      "alignment_overall_rel_diff_pct": 0.0,
+      "summac_mean_delta": 0.0023,
+      "factcc_mean_delta": -0.0015,
+      "bertscore_mean_f1": 0.9698,
+      "bertscore_mean_loss": 0.0302,
+      "runtime_seconds": 310.22,
+      "runtime_abs_diff": -396.77,
+      "runtime_rel_diff_pct": -56.12,
+      "sample_size": 100,
+      "examples_processed": 6,
+      "status": "SUCCESS"
+    },
+    "EXP_04_WEIGHT_EQUAL": {
+      "category": "Weighting Model Ablation",
+      "overrides": {
+        "cause_weight": 0.33,
+        "effect_weight": 0.33,
+        "relation_weight": 0.34
+      },
+      "alignment_overall_mean": 0.501,
+      "alignment_overall_abs_diff": 0.1815,
+      "alignment_overall_rel_diff_pct": 56.81,
+      "summac_mean_delta": -0.0092,
+      "factcc_mean_delta": -0.0015,
+      "bertscore_mean_f1": 0.9698,
+      "bertscore_mean_loss": 0.0302,
+      "runtime_seconds": 307.39,
+      "runtime_abs_diff": -399.6,
+      "runtime_rel_diff_pct": -56.52,
+      "sample_size": 100,
+      "examples_processed": 6,
+      "status": "SUCCESS"
+    },
+    "EXP_05_WEIGHT_ARG_ONLY": {
+      "category": "Weighting Model Ablation",
+      "overrides": {
+        "cause_weight": 0.5,
+        "effect_weight": 0.5,
+        "relation_weight": 0.0
+      },
+      "alignment_overall_mean": 0.2525,
+      "alignment_overall_abs_diff": -0.067,
+      "alignment_overall_rel_diff_pct": -20.97,
+      "summac_mean_delta": 0.0005,
+      "factcc_mean_delta": -0.0015,
+      "bertscore_mean_f1": 0.9698,
+      "bertscore_mean_loss": 0.0302,
+      "runtime_seconds": 304.55,
+      "runtime_abs_diff": -402.44,
+      "runtime_rel_diff_pct": -56.92,
+      "sample_size": 100,
+      "examples_processed": 6,
+      "status": "SUCCESS"
+    },
+    "EXP_06_ABLATE_SUMMAC": {
+      "category": "Individual Component Ablation",
+      "overrides": {
+        "summac_enabled": false
+      },
+      "alignment_overall_mean": 0.3195,
+      "alignment_overall_abs_diff": 0.0,
+      "alignment_overall_rel_diff_pct": 0.0,
+      "summac_mean_delta": null,
+      "factcc_mean_delta": -0.0015,
+      "bertscore_mean_f1": 0.9698,
+      "bertscore_mean_loss": 0.0302,
+      "runtime_seconds": 147.28,
+      "runtime_abs_diff": -559.71,
+      "runtime_rel_diff_pct": -79.17,
+      "sample_size": 100,
+      "examples_processed": 6,
+      "status": "SUCCESS"
+    },
+    "EXP_07_ABLATE_FACTCC": {
+      "category": "Individual Component Ablation",
+      "overrides": {
+        "factcc_enabled": false
+      },
+      "alignment_overall_mean": 0.3195,
+      "alignment_overall_abs_diff": 0.0,
+      "alignment_overall_rel_diff_pct": 0.0,
+      "summac_mean_delta": 0.0003,
+      "factcc_mean_delta": null,
+      "bertscore_mean_f1": 0.9698,
+      "bertscore_mean_loss": 0.0302,
+      "runtime_seconds": 298.11,
+      "runtime_abs_diff": -408.88,
+      "runtime_rel_diff_pct": -57.83,
+      "sample_size": 100,
+      "examples_processed": 6,
+      "status": "SUCCESS"
+    },
+    "EXP_08_ABLATE_BERTSCORE": {
+      "category": "Individual Component Ablation",
+      "overrides": {
+        "bertscore_enabled": false
+      },
+      "alignment_overall_mean": 0.3195,
+      "alignment_overall_abs_diff": 0.0,
+      "alignment_overall_rel_diff_pct": 0.0,
+      "summac_mean_delta": 0.0022,
+      "factcc_mean_delta": -0.0015,
+      "bertscore_mean_f1": null,
+      "bertscore_mean_loss": null,
+      "runtime_seconds": 569.21,
+      "runtime_abs_diff": -137.78,
+      "runtime_rel_diff_pct": -19.49,
+      "sample_size": 100,
+      "examples_processed": 6,
+      "status": "SUCCESS"
+    },
+    "EXP_09_HUMAN_CORRELATION": {
+      "category": "Evaluation Metric Comparison",
+      "overrides": {},
+      "alignment_overall_mean": null,
+      "alignment_overall_abs_diff": null,
+      "alignment_overall_rel_diff_pct": null,
+      "summac_mean_delta": null,
+      "factcc_mean_delta": null,
+      "bertscore_mean_f1": null,
+      "bertscore_mean_loss": null,
+      "runtime_seconds": 0.16,
+      "runtime_abs_diff": -706.83,
+      "runtime_rel_diff_pct": -99.98,
+      "sample_size": 12,
+      "examples_processed": 6,
+      "status": "SUCCESS",
+      "human_correlation_statistics": {
+        "consensus_records_count": 6,
+        "disagreed_records_excluded": 6,
+        "pearson_r_score_delta_vs_naturalness": -0.3162,
+        "spearman_rho_score_delta_vs_naturalness": -0.3162,
+        "binary_distortion_correlation_status": "undefined_constant_input"
+      }
+    }
+  }
+}

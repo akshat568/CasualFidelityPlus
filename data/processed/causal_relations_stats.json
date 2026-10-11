@@ -1,0 +1,27 @@
+{
+  "pipeline_info": {
+    "phase": "Phase 3 — Causal Relation Extraction",
+    "method": "rule_based"
+  },
+  "counts": {
+    "total_documents_processed": 100,
+    "documents_with_relations": 26,
+    "documents_with_zero_relations": 74,
+    "total_sentences_examined": 1641,
+    "candidate_sentences_examined": 0,
+    "total_relations_extracted": 51,
+    "average_relations_per_document": 0.51,
+    "validation_rejections": 0
+  },
+  "trigger_counts": {
+    "because": 25,
+    "due to": 9,
+    "because of": 6,
+    "caused": 4,
+    "led to": 3,
+    "resulted in": 2,
+    "contributed to": 1,
+    "because_leading": 1
+  },
+  "validation_rejections_breakdown": {}
+}

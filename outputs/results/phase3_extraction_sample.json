@@ -1,0 +1,169 @@
+{
+  "extracted_sample": [
+    {
+      "document_id": "xsum_000001",
+      "relation_id": "rel_000001",
+      "source_sentence": "He pulled his tee shot on the 17th into a hospitality area and escaped with a free drop and par five but an almost identical shot on the last was not so lucky, ending up in a lake and resulting in a dropped shot.",
+      "cause": "He pulled his tee shot on the 17th into a hospitality area and escaped with a free drop and par five but an almost identical shot on the last was not so lucky, ending up in a lake and",
+      "relation": "causes",
+      "effect": "a dropped shot",
+      "confidence": 0.9,
+      "extraction_method": "rule_based",
+      "pattern_matched": "resulted in"
+    },
+    {
+      "document_id": "xsum_000003",
+      "relation_id": "rel_000002",
+      "source_sentence": "Of course I am not just backing him to succeed at Villa because I used to play with him - the reason is that, since the earliest days of my career, I have always seen him as manager material.",
+      "cause": "I used to play with him - the reason is that, since the earliest days of my career, I have always seen him as manager material",
+      "relation": "causes",
+      "effect": "Of course I am not just backing him to succeed at Villa",
+      "confidence": 0.85,
+      "extraction_method": "rule_based",
+      "pattern_matched": "because"
+    },
+    {
+      "document_id": "xsum_000003",
+      "relation_id": "rel_000003",
+      "source_sentence": "When I was a teenager I looked up to him because I liked the way he went about things and how he dealt with me and other people.",
+      "cause": "I liked the way he went about things and how he dealt with me and other people",
+      "relation": "causes",
+      "effect": "When I was a teenager I looked up to him",
+      "confidence": 0.85,
+      "extraction_method": "rule_based",
+      "pattern_matched": "because"
+    },
+    {
+      "document_id": "xsum_000003",
+      "relation_id": "rel_000004",
+      "source_sentence": "So it does not surprise me that, as a manager, he has got the best out of players who had been under-performing - like Emmanuel Adebayor at Spurs or Christian Benteke and Fabian Delph at Villa last season - because he has always had the ability to get people playing for him.",
+      "cause": "he has always had the ability to get people playing for him",
+      "relation": "causes",
+      "effect": "it does not surprise me that, as a manager, he has got the best out of players who had been under-performing - like Emmanuel Adebayor at Spurs or Christian Benteke and Fabian Delph at Villa last season",
+      "confidence": 0.85,
+      "extraction_method": "rule_based",
+      "pattern_matched": "because"
+    },
+    {
+      "document_id": "xsum_000003",
+      "relation_id": "rel_000005",
+      "source_sentence": "At times he might say things that players don't like - because he tells the truth.",
+      "cause": "he tells the truth",
+      "relation": "causes",
+      "effect": "At times he might say things that players don't like",
+      "confidence": 0.85,
+      "extraction_method": "rule_based",
+      "pattern_matched": "because"
+    },
+    {
+      "document_id": "xsum_000003",
+      "relation_id": "rel_000006",
+      "source_sentence": "You cannot blame Tim for the squad not being strong enough if it is not just down to him, but he is the one who is being criticised because Villa have not won since the opening day.",
+      "cause": "Villa have not won since the opening day",
+      "relation": "causes",
+      "effect": "You cannot blame Tim for the squad not being strong enough if it is not just down to him, but he is the one who is being criticised",
+      "confidence": 0.85,
+      "extraction_method": "rule_based",
+      "pattern_matched": "because"
+    },
+    {
+      "document_id": "xsum_000003",
+      "relation_id": "rel_000007",
+      "source_sentence": "I get why the club's owner Randy Lerner might be getting twitchy because of the amount of money at stake if they go down, but the logical thing to do is to give Sherwood more time because he is an intelligent man who has already shown he can improve players - which is exactly what Villa need now.",
+      "cause": "the amount of money at stake if they go down, but the logical thing to do is to give Sherwood more time because he is an intelligent man who has already shown he can improve players - which is exactly what Villa need now",
+      "relation": "causes",
+      "effect": "I get why the club's owner Randy Lerner might be getting twitchy",
+      "confidence": 0.9,
+      "extraction_method": "rule_based",
+      "pattern_matched": "because of"
+    },
+    {
+      "document_id": "xsum_000003",
+      "relation_id": "rel_000008",
+      "source_sentence": "Sherwood has chopped and changed his team and formation a lot so far, but that is only because he is trying to find the right balance between attack and defence while he beds those new signings in and finds a system that works with the players he has got.",
+      "cause": "he is trying to find the right balance between attack and defence while he beds those new signings in and finds a system that works with the players he has got",
+      "relation": "causes",
+      "effect": "Sherwood has chopped and changed his team and formation a lot so far, but that is only",
+      "confidence": 0.85,
+      "extraction_method": "rule_based",
+      "pattern_matched": "because"
+    },
+    {
+      "document_id": "xsum_000003",
+      "relation_id": "rel_000009",
+      "source_sentence": "Because he is trying to find that balance between attack and defence, he cannot always play two up front to solve that problem, especially because he is also trying to fit Jack Grealish into his team as an attacking midfielder.",
+      "cause": "he is also trying to fit Jack Grealish into his team as an attacking midfielder",
+      "relation": "causes",
+      "effect": "Because he is trying to find that balance between attack and defence, he cannot always play two up front to solve that problem, especially",
+      "confidence": 0.85,
+      "extraction_method": "rule_based",
+      "pattern_matched": "because"
+    },
+    {
+      "document_id": "xsum_000003",
+      "relation_id": "rel_000010",
+      "source_sentence": "Grealish is a young player who has a lot of talent but picking him creates a different issue because winning games is not just down to what happens when you have got the ball.",
+      "cause": "winning games is not just down to what happens when you have got the ball",
+      "relation": "causes",
+      "effect": "Grealish is a young player who has a lot of talent but picking him creates a different issue",
+      "confidence": 0.85,
+      "extraction_method": "rule_based",
+      "pattern_matched": "because"
+    },
+    {
+      "document_id": "xsum_000009",
+      "relation_id": "rel_000011",
+      "source_sentence": "While this sounds like very little, because ringwoodite makes up almost all of this immense portion of the deep Earth, it adds up to a huge amount of deep water.",
+      "cause": "ringwoodite makes up almost all of this immense portion of the deep Earth, it adds up to a huge amount of deep water",
+      "relation": "causes",
+      "effect": "While this sounds like very little",
+      "confidence": 0.85,
+      "extraction_method": "rule_based",
+      "pattern_matched": "because"
+    },
+    {
+      "document_id": "xsum_000012",
+      "relation_id": "rel_000012",
+      "source_sentence": "But the BBC's West Africa Correspondent Thomas Fessy, who recently visited Darfur with Mr Bashir, says many of those who initially wanted this referendum will be likely to boycott the vote because they say it will not be fair.",
+      "cause": "they say it will not be fair",
+      "relation": "causes",
+      "effect": "But the BBC's West Africa Correspondent Thomas Fessy, who recently visited Darfur with Mr Bashir, says many of those who initially wanted this referendum will be likely to boycott the vote",
+      "confidence": 0.85,
+      "extraction_method": "rule_based",
+      "pattern_matched": "because"
+    },
+    {
+      "document_id": "xsum_000014",
+      "relation_id": "rel_000013",
+      "source_sentence": "More than two centuries on from that coin toss to decide whose name the race should take, trainer John Gosden - who is due to have five runners in the 238th Derby, including big fancy Cracksman - marvels at what was created.",
+      "cause": "have five runners in the 238th Derby, including big fancy Cracksman - marvels at what was created",
+      "relation": "causes",
+      "effect": "More than two centuries on from that coin toss to decide whose name the race should take, trainer John Gosden - who",
+      "confidence": 0.9,
+      "extraction_method": "rule_based",
+      "pattern_matched": "due to"
+    },
+    {
+      "document_id": "xsum_000016",
+      "relation_id": "rel_000014",
+      "source_sentence": "He was eventually seen by a major and told to leave because he should not have been with Pte James while she was on duty, the inquest heard.",
+      "cause": "he should not have been with Pte James while she was on duty, the inquest heard",
+      "relation": "causes",
+      "effect": "He was eventually seen by a major and told to leave",
+      "confidence": 0.85,
+      "extraction_method": "rule_based",
+      "pattern_matched": "because"
+    },
+    {
+      "document_id": "xsum_000016",
+      "relation_id": "rel_000015",
+      "source_sentence": "Alison Foster QC, representing the James family, suggested to Mr Wilkinson he was \"not just angry\" but \"humiliated\" when Mr Carr-Minns turned up because other people who were also in the room began to tease and laugh at him.",
+      "cause": "other people who were also in the room began to tease and laugh at him",
+      "relation": "causes",
+      "effect": "Alison Foster QC, representing the James family, suggested to Mr Wilkinson he was \"not just angry\" but \"humiliated\" when Mr Carr-Minns turned up",
+      "confidence": 0.85,
+      "extraction_method": "rule_based",
+      "pattern_matched": "because"
+    }
+  ]
+}

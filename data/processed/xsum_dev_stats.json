@@ -1,0 +1,39 @@
+{
+  "dataset_info": {
+    "name": "xsum",
+    "domain": "news",
+    "language": "en"
+  },
+  "counts": {
+    "total_records_examined": 500,
+    "total_invalid_records": 0,
+    "total_duplicate_records": 0,
+    "empty_documents": 0,
+    "empty_summaries": 0,
+    "final_development_dataset_size": 100,
+    "causal_candidates_count": 48,
+    "non_causal_candidates_count": 52
+  },
+  "length_statistics": {
+    "document_length_characters": {
+      "mean": 2074.04,
+      "min": 156,
+      "max": 7216
+    },
+    "document_length_words": {
+      "mean": 356.94,
+      "min": 24,
+      "max": 1306
+    },
+    "summary_length_characters": {
+      "mean": 120.46,
+      "min": 29,
+      "max": 184
+    },
+    "summary_length_words": {
+      "mean": 20.5,
+      "min": 4,
+      "max": 36
+    }
+  }
+}

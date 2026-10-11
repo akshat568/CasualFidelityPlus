@@ -1,0 +1,57 @@
+{
+  "controlled_benchmark_stats": {
+    "total_valid_perturbations": 6,
+    "total_rejected_perturbations": 4,
+    "evaluated_count": 6,
+    "agreement_count": 5,
+    "agreement_rate": 0.8333,
+    "insufficient_evidence_count": 0,
+    "valid_reversed_count": 0,
+    "intended_label_distribution": {
+      "WEAKENED": 2,
+      "DROPPED": 2,
+      "EFFECT_CHANGED": 1,
+      "CAUSE_CHANGED": 1
+    },
+    "detected_label_distribution": {
+      "WEAKENED": 3,
+      "EFFECT_CHANGED": 1,
+      "DROPPED": 1,
+      "CAUSE_CHANGED": 1
+    },
+    "valid_perturbation_ids": [
+      "xsum_000038_pert_000002",
+      "xsum_000038_pert_000003",
+      "xsum_000038_pert_000005",
+      "xsum_000074_pert_000007",
+      "xsum_000074_pert_000008",
+      "xsum_000074_pert_000009"
+    ],
+    "benchmark_limitation_note": "No validated REVERSED perturbations are currently available for benchmark evaluation.",
+    "sample_size_warning": "Small sample size (n=6). Results are descriptive and not statistically significant."
+  },
+  "reference_summary_stats": {
+    "total_source_relations_analyzed": 51,
+    "detected_label_distribution": {
+      "INSUFFICIENT_EVIDENCE": 49,
+      "DISTORTED": 1,
+      "EFFECT_CHANGED": 1
+    },
+    "insufficient_evidence_count": 49,
+    "disclaimer": "Reference summary labels are automatically detected from available Phase 8 evidence and are NOT human-validated ground truth."
+  },
+  "configuration": {
+    "cause_threshold": 0.5,
+    "effect_threshold": 0.5,
+    "overall_threshold": 0.6,
+    "weakened_trigger_words": [
+      "associated with",
+      "linked to",
+      "related to",
+      "correlated with",
+      "connected to",
+      "coinciding with",
+      "followed"
+    ]
+  }
+}

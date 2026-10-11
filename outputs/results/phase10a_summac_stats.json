@@ -1,0 +1,33 @@
+{
+  "metric_name": "SummaCConv",
+  "metric_version": "summac-0.0.4",
+  "total_valid_perturbations_evaluated": 6,
+  "mean_original_score": 0.2444,
+  "median_original_score": 0.2444,
+  "mean_perturbed_score": 0.2414,
+  "median_perturbed_score": 0.2355,
+  "mean_score_delta": 0.0029,
+  "median_score_delta": 0.0,
+  "breakdown_by_intended_label": {
+    "WEAKENED": {
+      "count": 2,
+      "mean_delta": 0.0,
+      "median_delta": 0.0
+    },
+    "DROPPED": {
+      "count": 2,
+      "mean_delta": 0.0,
+      "median_delta": 0.0
+    },
+    "EFFECT_CHANGED": {
+      "count": 1,
+      "mean_delta": 0.0176,
+      "median_delta": 0.0176
+    },
+    "CAUSE_CHANGED": {
+      "count": 1,
+      "mean_delta": 0.0,
+      "median_delta": 0.0
+    }
+  }
+}

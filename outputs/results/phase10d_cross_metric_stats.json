@@ -1,0 +1,116 @@
+{
+  "benchmark_overview": {
+    "total_valid_perturbations_evaluated": 6,
+    "total_invalid_perturbations_excluded": 4,
+    "unique_source_documents_count": 2,
+    "source_document_ids": [
+      "xsum_000038",
+      "xsum_000074"
+    ],
+    "sample_size_disclaimer": "n=6 small sample size. Results are descriptive and preliminary."
+  },
+  "summac_statistics": {
+    "mean_delta": 0.0029,
+    "median_delta": 0.0,
+    "min_delta": 0.0,
+    "max_delta": 0.0176,
+    "positive_count": 1,
+    "zero_count": 5,
+    "negative_count": 0
+  },
+  "factcc_statistics": {
+    "mean_delta": -0.0015,
+    "median_delta": -0.0002,
+    "min_delta": -0.0059,
+    "max_delta": -0.0,
+    "positive_count": 0,
+    "zero_count": 3,
+    "negative_count": 3
+  },
+  "bertscore_statistics": {
+    "mean_f1": 0.9698,
+    "median_f1": 0.9864,
+    "min_f1": 0.9205,
+    "max_f1": 0.9926,
+    "mean_similarity_loss": 0.0302,
+    "median_similarity_loss": 0.0137,
+    "min_similarity_loss": 0.0074,
+    "max_similarity_loss": 0.0795
+  },
+  "breakdown_by_intended_perturbation_type": {
+    "WEAKENED": {
+      "count": 2,
+      "is_single_observation": false,
+      "summac_mean_delta": 0.0,
+      "summac_median_delta": 0.0,
+      "factcc_mean_delta": -0.0015,
+      "factcc_median_delta": -0.0015,
+      "bertscore_mean_f1": 0.9872,
+      "bertscore_median_f1": 0.9872,
+      "bertscore_mean_similarity_loss": 0.0128,
+      "bertscore_median_similarity_loss": 0.0128,
+      "detected_label_distribution": {
+        "WEAKENED": 2
+      }
+    },
+    "DROPPED": {
+      "count": 2,
+      "is_single_observation": false,
+      "summac_mean_delta": 0.0,
+      "summac_median_delta": 0.0,
+      "factcc_mean_delta": -0.0029,
+      "factcc_median_delta": -0.0029,
+      "bertscore_mean_f1": 0.9892,
+      "bertscore_median_f1": 0.9892,
+      "bertscore_mean_similarity_loss": 0.0108,
+      "bertscore_median_similarity_loss": 0.0108,
+      "detected_label_distribution": {
+        "WEAKENED": 1,
+        "DROPPED": 1
+      }
+    },
+    "EFFECT_CHANGED": {
+      "count": 1,
+      "is_single_observation": true,
+      "summac_mean_delta": 0.0176,
+      "summac_median_delta": 0.0176,
+      "factcc_mean_delta": -0.0004,
+      "factcc_median_delta": -0.0004,
+      "bertscore_mean_f1": 0.9205,
+      "bertscore_median_f1": 0.9205,
+      "bertscore_mean_similarity_loss": 0.0795,
+      "bertscore_median_similarity_loss": 0.0795,
+      "detected_label_distribution": {
+        "EFFECT_CHANGED": 1
+      },
+      "note": "Single observation — descriptive value only."
+    },
+    "CAUSE_CHANGED": {
+      "count": 1,
+      "is_single_observation": true,
+      "summac_mean_delta": 0.0,
+      "summac_median_delta": 0.0,
+      "factcc_mean_delta": 0.0,
+      "factcc_median_delta": -0.0,
+      "bertscore_mean_f1": 0.9456,
+      "bertscore_median_f1": 0.9456,
+      "bertscore_mean_similarity_loss": 0.0544,
+      "bertscore_median_similarity_loss": 0.0544,
+      "detected_label_distribution": {
+        "CAUSE_CHANGED": 1
+      },
+      "note": "Single observation — descriptive value only."
+    },
+    "REVERSED": {
+      "count": 0,
+      "coverage": "0 valid benchmark examples",
+      "note": "No valid perturbations available in current dev benchmark for this category."
+    }
+  },
+  "detected_distortion_label_distribution": {
+    "WEAKENED": 3,
+    "EFFECT_CHANGED": 1,
+    "DROPPED": 1,
+    "CAUSE_CHANGED": 1
+  }
+}

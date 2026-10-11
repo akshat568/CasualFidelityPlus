@@ -1,0 +1,362 @@
+{
+  "metadata": {
+    "description": "Sample output records for Phase 9 Causal Distortion Detection.",
+    "total_records_generated": 57,
+    "benchmark_records_count": 6,
+    "reference_records_count": 51
+  },
+  "benchmark_samples": [
+    {
+      "analysis_id": "dist_pert_xsum_000038_pert_000002",
+      "document_id": "xsum_000038",
+      "summary_id": "xsum_000038_ref",
+      "perturbation_id": "xsum_000038_pert_000002",
+      "source_relation_id": "",
+      "source_relation": {
+        "cause": "A grade II-listed bridge in Dorset that was blamed for",
+        "relation": "causes",
+        "effect": "severe floods is to be dismantled and replaced"
+      },
+      "summary_evidence": {
+        "summary_relation_id": null,
+        "cause": null,
+        "relation": null,
+        "effect": null,
+        "cause_similarity": 0.7000505924224854,
+        "effect_similarity": 0.736911952495575,
+        "relation_compatibility": null,
+        "overall_alignment_score": null,
+        "alignment_status": null
+      },
+      "detected_label": "WEAKENED",
+      "evidence_strength": "MEDIUM",
+      "intended_label": "WEAKENED",
+      "agreement": true,
+      "reason": "cause and effect aligned but summary relation weakened from explicit causation to associative language",
+      "metadata": {
+        "analysis_method": "deterministic_rule_based",
+        "phase": 9,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6
+      }
+    },
+    {
+      "analysis_id": "dist_pert_xsum_000038_pert_000003",
+      "document_id": "xsum_000038",
+      "summary_id": "xsum_000038_ref",
+      "perturbation_id": "xsum_000038_pert_000003",
+      "source_relation_id": "",
+      "source_relation": {
+        "cause": "A grade II-listed bridge in Dorset that was blamed for",
+        "relation": "causes",
+        "effect": "severe floods is to be dismantled and replaced"
+      },
+      "summary_evidence": {
+        "summary_relation_id": null,
+        "cause": null,
+        "relation": null,
+        "effect": null,
+        "cause_similarity": 0.7039621472358704,
+        "effect_similarity": 0.7255012392997742,
+        "relation_compatibility": null,
+        "overall_alignment_score": null,
+        "alignment_status": null
+      },
+      "detected_label": "WEAKENED",
+      "evidence_strength": "MEDIUM",
+      "intended_label": "DROPPED",
+      "agreement": false,
+      "reason": "cause and effect aligned but summary relation weakened from explicit causation to associative language",
+      "metadata": {
+        "analysis_method": "deterministic_rule_based",
+        "phase": 9,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6
+      }
+    },
+    {
+      "analysis_id": "dist_pert_xsum_000038_pert_000005",
+      "document_id": "xsum_000038",
+      "summary_id": "xsum_000038_ref",
+      "perturbation_id": "xsum_000038_pert_000005",
+      "source_relation_id": "",
+      "source_relation": {
+        "cause": "A grade II-listed bridge in Dorset that was blamed for",
+        "relation": "causes",
+        "effect": "severe floods is to be dismantled and replaced"
+      },
+      "summary_evidence": {
+        "summary_relation_id": "xsum_000038_ref_rel_001",
+        "cause": "A grade II-listed bridge in Dorset that was blamed for",
+        "relation": "causes",
+        "effect": "Charminster bridge was previously untouchable",
+        "cause_similarity": 1.0,
+        "effect_similarity": 0.16597223281860352,
+        "relation_compatibility": 1.0,
+        "overall_alignment_score": 0.6246875047683715,
+        "alignment_status": "aligned"
+      },
+      "detected_label": "EFFECT_CHANGED",
+      "evidence_strength": "HIGH",
+      "intended_label": "EFFECT_CHANGED",
+      "agreement": true,
+      "reason": "cause aligned but summary explicitly associates a different effect",
+      "metadata": {
+        "analysis_method": "deterministic_rule_based",
+        "phase": 9,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6
+      }
+    },
+    {
+      "analysis_id": "dist_pert_xsum_000074_pert_000007",
+      "document_id": "xsum_000074",
+      "summary_id": "xsum_000074_ref",
+      "perturbation_id": "xsum_000074_pert_000007",
+      "source_relation_id": "",
+      "source_relation": {
+        "cause": "concerns over rare great crested newts",
+        "relation": "causes",
+        "effect": "Work has started on a footbridge at the site of a £10m railway station where construction efforts stalled"
+      },
+      "summary_evidence": {
+        "summary_relation_id": null,
+        "cause": null,
+        "relation": null,
+        "effect": null,
+        "cause_similarity": 0.3996778428554535,
+        "effect_similarity": 0.81199049949646,
+        "relation_compatibility": null,
+        "overall_alignment_score": null,
+        "alignment_status": null
+      },
+      "detected_label": "WEAKENED",
+      "evidence_strength": "MEDIUM",
+      "intended_label": "WEAKENED",
+      "agreement": true,
+      "reason": "cause and effect aligned but summary relation weakened from explicit causation to associative language",
+      "metadata": {
+        "analysis_method": "deterministic_rule_based",
+        "phase": 9,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6
+      }
+    },
+    {
+      "analysis_id": "dist_pert_xsum_000074_pert_000008",
+      "document_id": "xsum_000074",
+      "summary_id": "xsum_000074_ref",
+      "perturbation_id": "xsum_000074_pert_000008",
+      "source_relation_id": "",
+      "source_relation": {
+        "cause": "concerns over rare great crested newts",
+        "relation": "causes",
+        "effect": "Work has started on a footbridge at the site of a £10m railway station where construction efforts stalled"
+      },
+      "summary_evidence": {
+        "summary_relation_id": null,
+        "cause": null,
+        "relation": null,
+        "effect": null,
+        "cause_similarity": 0.3685976564884186,
+        "effect_similarity": 0.8328430652618408,
+        "relation_compatibility": null,
+        "overall_alignment_score": null,
+        "alignment_status": null
+      },
+      "detected_label": "DROPPED",
+      "evidence_strength": "MEDIUM",
+      "intended_label": "DROPPED",
+      "agreement": true,
+      "reason": "relevant source cause and effect present in summary but causal relationship deleted",
+      "metadata": {
+        "analysis_method": "deterministic_rule_based",
+        "phase": 9,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6
+      }
+    }
+  ],
+  "reference_samples": [
+    {
+      "analysis_id": "dist_rel_000001_xsum_000001_ref",
+      "document_id": "xsum_000001",
+      "summary_id": "xsum_000001_ref",
+      "perturbation_id": null,
+      "source_relation_id": "rel_000001",
+      "source_relation": {
+        "cause": "He pulled his tee shot on the 17th into a hospitality area and escaped with a free drop and par five but an almost identical shot on the last was not so lucky, ending up in a lake and",
+        "relation": "causes",
+        "effect": "a dropped shot"
+      },
+      "summary_evidence": {
+        "summary_relation_id": null,
+        "cause": null,
+        "relation": null,
+        "effect": null,
+        "cause_similarity": null,
+        "effect_similarity": null,
+        "relation_compatibility": null,
+        "overall_alignment_score": null,
+        "alignment_status": null
+      },
+      "detected_label": "INSUFFICIENT_EVIDENCE",
+      "evidence_strength": "INSUFFICIENT",
+      "intended_label": null,
+      "agreement": null,
+      "reason": "no explicit summary causal relation and insufficient argument evidence",
+      "metadata": {
+        "analysis_method": "deterministic_rule_based",
+        "phase": 9,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6
+      }
+    },
+    {
+      "analysis_id": "dist_rel_000002_xsum_000003_ref",
+      "document_id": "xsum_000003",
+      "summary_id": "xsum_000003_ref",
+      "perturbation_id": null,
+      "source_relation_id": "rel_000002",
+      "source_relation": {
+        "cause": "I used to play with him - the reason is that, since the earliest days of my career, I have always seen him as manager material",
+        "relation": "causes",
+        "effect": "Of course I am not just backing him to succeed at Villa"
+      },
+      "summary_evidence": {
+        "summary_relation_id": null,
+        "cause": null,
+        "relation": null,
+        "effect": null,
+        "cause_similarity": null,
+        "effect_similarity": null,
+        "relation_compatibility": null,
+        "overall_alignment_score": null,
+        "alignment_status": null
+      },
+      "detected_label": "INSUFFICIENT_EVIDENCE",
+      "evidence_strength": "INSUFFICIENT",
+      "intended_label": null,
+      "agreement": null,
+      "reason": "no explicit summary causal relation and insufficient argument evidence",
+      "metadata": {
+        "analysis_method": "deterministic_rule_based",
+        "phase": 9,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6
+      }
+    },
+    {
+      "analysis_id": "dist_rel_000003_xsum_000003_ref",
+      "document_id": "xsum_000003",
+      "summary_id": "xsum_000003_ref",
+      "perturbation_id": null,
+      "source_relation_id": "rel_000003",
+      "source_relation": {
+        "cause": "I liked the way he went about things and how he dealt with me and other people",
+        "relation": "causes",
+        "effect": "When I was a teenager I looked up to him"
+      },
+      "summary_evidence": {
+        "summary_relation_id": null,
+        "cause": null,
+        "relation": null,
+        "effect": null,
+        "cause_similarity": null,
+        "effect_similarity": null,
+        "relation_compatibility": null,
+        "overall_alignment_score": null,
+        "alignment_status": null
+      },
+      "detected_label": "INSUFFICIENT_EVIDENCE",
+      "evidence_strength": "INSUFFICIENT",
+      "intended_label": null,
+      "agreement": null,
+      "reason": "no explicit summary causal relation and insufficient argument evidence",
+      "metadata": {
+        "analysis_method": "deterministic_rule_based",
+        "phase": 9,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6
+      }
+    },
+    {
+      "analysis_id": "dist_rel_000004_xsum_000003_ref",
+      "document_id": "xsum_000003",
+      "summary_id": "xsum_000003_ref",
+      "perturbation_id": null,
+      "source_relation_id": "rel_000004",
+      "source_relation": {
+        "cause": "he has always had the ability to get people playing for him",
+        "relation": "causes",
+        "effect": "it does not surprise me that, as a manager, he has got the best out of players who had been under-performing - like Emmanuel Adebayor at Spurs or Christian Benteke and Fabian Delph at Villa last season"
+      },
+      "summary_evidence": {
+        "summary_relation_id": null,
+        "cause": null,
+        "relation": null,
+        "effect": null,
+        "cause_similarity": null,
+        "effect_similarity": null,
+        "relation_compatibility": null,
+        "overall_alignment_score": null,
+        "alignment_status": null
+      },
+      "detected_label": "INSUFFICIENT_EVIDENCE",
+      "evidence_strength": "INSUFFICIENT",
+      "intended_label": null,
+      "agreement": null,
+      "reason": "no explicit summary causal relation and insufficient argument evidence",
+      "metadata": {
+        "analysis_method": "deterministic_rule_based",
+        "phase": 9,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6
+      }
+    },
+    {
+      "analysis_id": "dist_rel_000005_xsum_000003_ref",
+      "document_id": "xsum_000003",
+      "summary_id": "xsum_000003_ref",
+      "perturbation_id": null,
+      "source_relation_id": "rel_000005",
+      "source_relation": {
+        "cause": "he tells the truth",
+        "relation": "causes",
+        "effect": "At times he might say things that players don't like"
+      },
+      "summary_evidence": {
+        "summary_relation_id": null,
+        "cause": null,
+        "relation": null,
+        "effect": null,
+        "cause_similarity": null,
+        "effect_similarity": null,
+        "relation_compatibility": null,
+        "overall_alignment_score": null,
+        "alignment_status": null
+      },
+      "detected_label": "INSUFFICIENT_EVIDENCE",
+      "evidence_strength": "INSUFFICIENT",
+      "intended_label": null,
+      "agreement": null,
+      "reason": "no explicit summary causal relation and insufficient argument evidence",
+      "metadata": {
+        "analysis_method": "deterministic_rule_based",
+        "phase": 9,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6
+      }
+    }
+  ]
+}

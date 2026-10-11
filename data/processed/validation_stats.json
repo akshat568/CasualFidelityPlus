@@ -1,0 +1,47 @@
+{
+  "pipeline_info": {
+    "phase": "Phase 7 — Perturbation Validation & Quality Control",
+    "method": "deterministic_rules"
+  },
+  "counts": {
+    "records_examined": 10,
+    "valid_records": 6,
+    "invalid_records": 4,
+    "validation_rate": 0.6
+  },
+  "counts_by_type": {
+    "REVERSED": 2,
+    "WEAKENED": 2,
+    "DROPPED": 2,
+    "CAUSE_CHANGED": 2,
+    "EFFECT_CHANGED": 2
+  },
+  "status_by_type": {
+    "REVERSED": {
+      "valid": 0,
+      "invalid": 2
+    },
+    "WEAKENED": {
+      "valid": 2,
+      "invalid": 0
+    },
+    "DROPPED": {
+      "valid": 2,
+      "invalid": 0
+    },
+    "CAUSE_CHANGED": {
+      "valid": 1,
+      "invalid": 1
+    },
+    "EFFECT_CHANGED": {
+      "valid": 1,
+      "invalid": 1
+    }
+  },
+  "error_counts": {
+    "malformed_reversal_structure": 2,
+    "excessive_unrelated_edit": 2,
+    "uncontrolled_context_rewrite": 2
+  },
+  "warning_counts": {}
+}

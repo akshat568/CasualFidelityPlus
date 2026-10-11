@@ -1,0 +1,160 @@
+{
+  "sample_count": 5,
+  "alignments": [
+    {
+      "alignment_id": "align_rel_000001",
+      "document_id": "xsum_000001",
+      "source_relation_id": "rel_000001",
+      "summary_id": null,
+      "summary_relation_id": null,
+      "source_relation": {
+        "cause": "He pulled his tee shot on the 17th into a hospitality area and escaped with a free drop and par five but an almost identical shot on the last was not so lucky, ending up in a lake and",
+        "relation": "causes",
+        "effect": "a dropped shot"
+      },
+      "summary_relation": null,
+      "cause_similarity": 0.0,
+      "effect_similarity": 0.0,
+      "relation_compatibility": 0.0,
+      "overall_alignment_score": 0.0,
+      "candidate_rank": null,
+      "alignment_status": "no_candidate",
+      "exact_match": false,
+      "metadata": {
+        "embedding_model": "all-MiniLM-L6-v2",
+        "device": "cpu",
+        "cause_weight": 0.45,
+        "effect_weight": 0.45,
+        "relation_weight": 0.1,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6,
+        "ambiguity_margin": 0.05
+      }
+    },
+    {
+      "alignment_id": "align_rel_000002",
+      "document_id": "xsum_000003",
+      "source_relation_id": "rel_000002",
+      "summary_id": null,
+      "summary_relation_id": null,
+      "source_relation": {
+        "cause": "I used to play with him - the reason is that, since the earliest days of my career, I have always seen him as manager material",
+        "relation": "causes",
+        "effect": "Of course I am not just backing him to succeed at Villa"
+      },
+      "summary_relation": null,
+      "cause_similarity": 0.0,
+      "effect_similarity": 0.0,
+      "relation_compatibility": 0.0,
+      "overall_alignment_score": 0.0,
+      "candidate_rank": null,
+      "alignment_status": "no_candidate",
+      "exact_match": false,
+      "metadata": {
+        "embedding_model": "all-MiniLM-L6-v2",
+        "device": "cpu",
+        "cause_weight": 0.45,
+        "effect_weight": 0.45,
+        "relation_weight": 0.1,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6,
+        "ambiguity_margin": 0.05
+      }
+    },
+    {
+      "alignment_id": "align_rel_000003",
+      "document_id": "xsum_000003",
+      "source_relation_id": "rel_000003",
+      "summary_id": null,
+      "summary_relation_id": null,
+      "source_relation": {
+        "cause": "I liked the way he went about things and how he dealt with me and other people",
+        "relation": "causes",
+        "effect": "When I was a teenager I looked up to him"
+      },
+      "summary_relation": null,
+      "cause_similarity": 0.0,
+      "effect_similarity": 0.0,
+      "relation_compatibility": 0.0,
+      "overall_alignment_score": 0.0,
+      "candidate_rank": null,
+      "alignment_status": "no_candidate",
+      "exact_match": false,
+      "metadata": {
+        "embedding_model": "all-MiniLM-L6-v2",
+        "device": "cpu",
+        "cause_weight": 0.45,
+        "effect_weight": 0.45,
+        "relation_weight": 0.1,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6,
+        "ambiguity_margin": 0.05
+      }
+    },
+    {
+      "alignment_id": "align_rel_000004",
+      "document_id": "xsum_000003",
+      "source_relation_id": "rel_000004",
+      "summary_id": null,
+      "summary_relation_id": null,
+      "source_relation": {
+        "cause": "he has always had the ability to get people playing for him",
+        "relation": "causes",
+        "effect": "it does not surprise me that, as a manager, he has got the best out of players who had been under-performing - like Emmanuel Adebayor at Spurs or Christian Benteke and Fabian Delph at Villa last season"
+      },
+      "summary_relation": null,
+      "cause_similarity": 0.0,
+      "effect_similarity": 0.0,
+      "relation_compatibility": 0.0,
+      "overall_alignment_score": 0.0,
+      "candidate_rank": null,
+      "alignment_status": "no_candidate",
+      "exact_match": false,
+      "metadata": {
+        "embedding_model": "all-MiniLM-L6-v2",
+        "device": "cpu",
+        "cause_weight": 0.45,
+        "effect_weight": 0.45,
+        "relation_weight": 0.1,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6,
+        "ambiguity_margin": 0.05
+      }
+    },
+    {
+      "alignment_id": "align_rel_000005",
+      "document_id": "xsum_000003",
+      "source_relation_id": "rel_000005",
+      "summary_id": null,
+      "summary_relation_id": null,
+      "source_relation": {
+        "cause": "he tells the truth",
+        "relation": "causes",
+        "effect": "At times he might say things that players don't like"
+      },
+      "summary_relation": null,
+      "cause_similarity": 0.0,
+      "effect_similarity": 0.0,
+      "relation_compatibility": 0.0,
+      "overall_alignment_score": 0.0,
+      "candidate_rank": null,
+      "alignment_status": "no_candidate",
+      "exact_match": false,
+      "metadata": {
+        "embedding_model": "all-MiniLM-L6-v2",
+        "device": "cpu",
+        "cause_weight": 0.45,
+        "effect_weight": 0.45,
+        "relation_weight": 0.1,
+        "cause_threshold": 0.5,
+        "effect_threshold": 0.5,
+        "overall_threshold": 0.6,
+        "ambiguity_margin": 0.05
+      }
+    }
+  ]
+}

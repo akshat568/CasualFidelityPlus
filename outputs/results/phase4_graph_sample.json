@@ -1,0 +1,810 @@
+{
+  "graph_sample": [
+    {
+      "document_id": "xsum_000001",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "He pulled his tee shot on the 17th into a hospitality area and escaped with a free drop and par five but an almost identical shot on the last was not so lucky, ending up in a lake and",
+          "normalized_text": "he pulled his tee shot on the 17th into a hospitality area and escaped with a free drop and par five but an almost identical shot on the last was not so lucky, ending up in a lake and"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "a dropped shot",
+          "normalized_text": "a dropped shot"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000001",
+          "provenance_relation_ids": [
+            "rel_000001"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 2,
+        "edge_count": 1,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 1,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000003",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "I used to play with him - the reason is that, since the earliest days of my career, I have always seen him as manager material",
+          "normalized_text": "i used to play with him - the reason is that, since the earliest days of my career, i have always seen him as manager material"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "Of course I am not just backing him to succeed at Villa",
+          "normalized_text": "of course i am not just backing him to succeed at villa"
+        },
+        {
+          "node_id": "node_000003",
+          "text": "I liked the way he went about things and how he dealt with me and other people",
+          "normalized_text": "i liked the way he went about things and how he dealt with me and other people"
+        },
+        {
+          "node_id": "node_000004",
+          "text": "When I was a teenager I looked up to him",
+          "normalized_text": "when i was a teenager i looked up to him"
+        },
+        {
+          "node_id": "node_000005",
+          "text": "he has always had the ability to get people playing for him",
+          "normalized_text": "he has always had the ability to get people playing for him"
+        },
+        {
+          "node_id": "node_000006",
+          "text": "it does not surprise me that, as a manager, he has got the best out of players who had been under-performing - like Emmanuel Adebayor at Spurs or Christian Benteke and Fabian Delph at Villa last season",
+          "normalized_text": "it does not surprise me that, as a manager, he has got the best out of players who had been under-performing - like emmanuel adebayor at spurs or christian benteke and fabian delph at villa last season"
+        },
+        {
+          "node_id": "node_000007",
+          "text": "he tells the truth",
+          "normalized_text": "he tells the truth"
+        },
+        {
+          "node_id": "node_000008",
+          "text": "At times he might say things that players don't like",
+          "normalized_text": "at times he might say things that players don't like"
+        },
+        {
+          "node_id": "node_000009",
+          "text": "Villa have not won since the opening day",
+          "normalized_text": "villa have not won since the opening day"
+        },
+        {
+          "node_id": "node_000010",
+          "text": "You cannot blame Tim for the squad not being strong enough if it is not just down to him, but he is the one who is being criticised",
+          "normalized_text": "you cannot blame tim for the squad not being strong enough if it is not just down to him, but he is the one who is being criticised"
+        },
+        {
+          "node_id": "node_000011",
+          "text": "the amount of money at stake if they go down, but the logical thing to do is to give Sherwood more time because he is an intelligent man who has already shown he can improve players - which is exactly what Villa need now",
+          "normalized_text": "the amount of money at stake if they go down, but the logical thing to do is to give sherwood more time because he is an intelligent man who has already shown he can improve players - which is exactly what villa need now"
+        },
+        {
+          "node_id": "node_000012",
+          "text": "I get why the club's owner Randy Lerner might be getting twitchy",
+          "normalized_text": "i get why the club's owner randy lerner might be getting twitchy"
+        },
+        {
+          "node_id": "node_000013",
+          "text": "he is trying to find the right balance between attack and defence while he beds those new signings in and finds a system that works with the players he has got",
+          "normalized_text": "he is trying to find the right balance between attack and defence while he beds those new signings in and finds a system that works with the players he has got"
+        },
+        {
+          "node_id": "node_000014",
+          "text": "Sherwood has chopped and changed his team and formation a lot so far, but that is only",
+          "normalized_text": "sherwood has chopped and changed his team and formation a lot so far, but that is only"
+        },
+        {
+          "node_id": "node_000015",
+          "text": "he is also trying to fit Jack Grealish into his team as an attacking midfielder",
+          "normalized_text": "he is also trying to fit jack grealish into his team as an attacking midfielder"
+        },
+        {
+          "node_id": "node_000016",
+          "text": "Because he is trying to find that balance between attack and defence, he cannot always play two up front to solve that problem, especially",
+          "normalized_text": "because he is trying to find that balance between attack and defence, he cannot always play two up front to solve that problem, especially"
+        },
+        {
+          "node_id": "node_000017",
+          "text": "winning games is not just down to what happens when you have got the ball",
+          "normalized_text": "winning games is not just down to what happens when you have got the ball"
+        },
+        {
+          "node_id": "node_000018",
+          "text": "Grealish is a young player who has a lot of talent but picking him creates a different issue",
+          "normalized_text": "grealish is a young player who has a lot of talent but picking him creates a different issue"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000002",
+          "provenance_relation_ids": [
+            "rel_000002"
+          ]
+        },
+        {
+          "source": "node_000003",
+          "target": "node_000004",
+          "relation": "causes",
+          "relation_id": "rel_000003",
+          "provenance_relation_ids": [
+            "rel_000003"
+          ]
+        },
+        {
+          "source": "node_000005",
+          "target": "node_000006",
+          "relation": "causes",
+          "relation_id": "rel_000004",
+          "provenance_relation_ids": [
+            "rel_000004"
+          ]
+        },
+        {
+          "source": "node_000007",
+          "target": "node_000008",
+          "relation": "causes",
+          "relation_id": "rel_000005",
+          "provenance_relation_ids": [
+            "rel_000005"
+          ]
+        },
+        {
+          "source": "node_000009",
+          "target": "node_000010",
+          "relation": "causes",
+          "relation_id": "rel_000006",
+          "provenance_relation_ids": [
+            "rel_000006"
+          ]
+        },
+        {
+          "source": "node_000011",
+          "target": "node_000012",
+          "relation": "causes",
+          "relation_id": "rel_000007",
+          "provenance_relation_ids": [
+            "rel_000007"
+          ]
+        },
+        {
+          "source": "node_000013",
+          "target": "node_000014",
+          "relation": "causes",
+          "relation_id": "rel_000008",
+          "provenance_relation_ids": [
+            "rel_000008"
+          ]
+        },
+        {
+          "source": "node_000015",
+          "target": "node_000016",
+          "relation": "causes",
+          "relation_id": "rel_000009",
+          "provenance_relation_ids": [
+            "rel_000009"
+          ]
+        },
+        {
+          "source": "node_000017",
+          "target": "node_000018",
+          "relation": "causes",
+          "relation_id": "rel_000010",
+          "provenance_relation_ids": [
+            "rel_000010"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 18,
+        "edge_count": 9,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 9,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000009",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "ringwoodite makes up almost all of this immense portion of the deep Earth, it adds up to a huge amount of deep water",
+          "normalized_text": "ringwoodite makes up almost all of this immense portion of the deep earth, it adds up to a huge amount of deep water"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "While this sounds like very little",
+          "normalized_text": "while this sounds like very little"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000011",
+          "provenance_relation_ids": [
+            "rel_000011"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 2,
+        "edge_count": 1,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 1,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000012",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "they say it will not be fair",
+          "normalized_text": "they say it will not be fair"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "But the BBC's West Africa Correspondent Thomas Fessy, who recently visited Darfur with Mr Bashir, says many of those who initially wanted this referendum will be likely to boycott the vote",
+          "normalized_text": "but the bbc's west africa correspondent thomas fessy, who recently visited darfur with mr bashir, says many of those who initially wanted this referendum will be likely to boycott the vote"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000012",
+          "provenance_relation_ids": [
+            "rel_000012"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 2,
+        "edge_count": 1,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 1,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000014",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "have five runners in the 238th Derby, including big fancy Cracksman - marvels at what was created",
+          "normalized_text": "have five runners in the 238th derby, including big fancy cracksman - marvels at what was created"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "More than two centuries on from that coin toss to decide whose name the race should take, trainer John Gosden - who",
+          "normalized_text": "more than two centuries on from that coin toss to decide whose name the race should take, trainer john gosden - who"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000013",
+          "provenance_relation_ids": [
+            "rel_000013"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 2,
+        "edge_count": 1,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 1,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000016",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "he should not have been with Pte James while she was on duty, the inquest heard",
+          "normalized_text": "he should not have been with pte james while she was on duty, the inquest heard"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "He was eventually seen by a major and told to leave",
+          "normalized_text": "he was eventually seen by a major and told to leave"
+        },
+        {
+          "node_id": "node_000003",
+          "text": "other people who were also in the room began to tease and laugh at him",
+          "normalized_text": "other people who were also in the room began to tease and laugh at him"
+        },
+        {
+          "node_id": "node_000004",
+          "text": "Alison Foster QC, representing the James family, suggested to Mr Wilkinson he was \"not just angry\" but \"humiliated\" when Mr Carr-Minns turned up",
+          "normalized_text": "alison foster qc, representing the james family, suggested to mr wilkinson he was \"not just angry\" but \"humiliated\" when mr carr-minns turned up"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000014",
+          "provenance_relation_ids": [
+            "rel_000014"
+          ]
+        },
+        {
+          "source": "node_000003",
+          "target": "node_000004",
+          "relation": "causes",
+          "relation_id": "rel_000015",
+          "provenance_relation_ids": [
+            "rel_000015"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 4,
+        "edge_count": 2,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 2,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000017",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "fog, he was transferred on to the lifeboat and taken to Lyme Regis from where he was taken by ambulance to hospital in Dorchester",
+          "normalized_text": "fog, he was transferred on to the lifeboat and taken to lyme regis from where he was taken by ambulance to hospital in dorchester"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "With a rescue helicopter unavailable",
+          "normalized_text": "with a rescue helicopter unavailable"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000016",
+          "provenance_relation_ids": [
+            "rel_000016"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 2,
+        "edge_count": 1,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 1,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000036",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "weak sales",
+          "normalized_text": "weak sales"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "Shares of Apple dropped 2% after a report suggested the company was cutting iPhone production in the April-June quarter",
+          "normalized_text": "shares of apple dropped 2% after a report suggested the company was cutting iphone production in the april-june quarter"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000017",
+          "provenance_relation_ids": [
+            "rel_000017"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 2,
+        "edge_count": 1,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 1,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000038",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "its historic status, but authorities agreed its small arches restricted the flow of the River Cerne",
+          "normalized_text": "its historic status, but authorities agreed its small arches restricted the flow of the river cerne"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "Charminster bridge was previously untouchable",
+          "normalized_text": "charminster bridge was previously untouchable"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000018",
+          "provenance_relation_ids": [
+            "rel_000018"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 2,
+        "edge_count": 1,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 1,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000047",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "they do not believe that Russia will end its bombing campaign in support of the government",
+          "normalized_text": "they do not believe that russia will end its bombing campaign in support of the government"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "Rebel groups in Syria have told the BBC they would not stop fighting",
+          "normalized_text": "rebel groups in syria have told the bbc they would not stop fighting"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000019",
+          "provenance_relation_ids": [
+            "rel_000019"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 2,
+        "edge_count": 1,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 1,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000049",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "The by-election was",
+          "normalized_text": "the by-election was"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "by the resignation of sitting MSP Bill Walker, who was thrown out of the SNP and jailed for domestic abuse",
+          "normalized_text": "by the resignation of sitting msp bill walker, who was thrown out of the snp and jailed for domestic abuse"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000020",
+          "provenance_relation_ids": [
+            "rel_000020"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 2,
+        "edge_count": 1,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 1,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000054",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "It",
+          "normalized_text": "it"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "a tremor, difficulty moving and eventually memory problems",
+          "normalized_text": "a tremor, difficulty moving and eventually memory problems"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000021",
+          "provenance_relation_ids": [
+            "rel_000021"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 2,
+        "edge_count": 1,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 1,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000057",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "young people were \"waiting now to get help and support\"",
+          "normalized_text": "young people were \"waiting now to get help and support\""
+        },
+        {
+          "node_id": "node_000002",
+          "text": "But SAMH said the issue needed to be addressed as quickly as possible",
+          "normalized_text": "but samh said the issue needed to be addressed as quickly as possible"
+        },
+        {
+          "node_id": "node_000003",
+          "text": "she was not suicidal or self-harming, her case was not serious enough",
+          "normalized_text": "she was not suicidal or self-harming, her case was not serious enough"
+        },
+        {
+          "node_id": "node_000004",
+          "text": "Caitlin was told that",
+          "normalized_text": "caitlin was told that"
+        },
+        {
+          "node_id": "node_000005",
+          "text": "they didn't have the capability to assess me properly,\" she said",
+          "normalized_text": "they didn't have the capability to assess me properly,\" she said"
+        },
+        {
+          "node_id": "node_000006",
+          "text": "\"If the person doing the assessment had asked me if I was suicidal or self-harming I would have answered yes to both those questions, but basically I was refused help",
+          "normalized_text": "\"if the person doing the assessment had asked me if i was suicidal or self-harming i would have answered yes to both those questions, but basically i was refused help"
+        },
+        {
+          "node_id": "node_000007",
+          "text": "there are young people waiting now to get help and support",
+          "normalized_text": "there are young people waiting now to get help and support"
+        },
+        {
+          "node_id": "node_000008",
+          "text": "Ms Anderson said this was encouraging, but added: \"We really urge that to be quick and thorough",
+          "normalized_text": "ms anderson said this was encouraging, but added: \"we really urge that to be quick and thorough"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000022",
+          "provenance_relation_ids": [
+            "rel_000022"
+          ]
+        },
+        {
+          "source": "node_000003",
+          "target": "node_000004",
+          "relation": "causes",
+          "relation_id": "rel_000023",
+          "provenance_relation_ids": [
+            "rel_000023"
+          ]
+        },
+        {
+          "source": "node_000005",
+          "target": "node_000006",
+          "relation": "causes",
+          "relation_id": "rel_000024",
+          "provenance_relation_ids": [
+            "rel_000024"
+          ]
+        },
+        {
+          "source": "node_000007",
+          "target": "node_000008",
+          "relation": "causes",
+          "relation_id": "rel_000025",
+          "provenance_relation_ids": [
+            "rel_000025"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 8,
+        "edge_count": 4,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 4,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000061",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "they are young,\" he said",
+          "normalized_text": "they are young,\" he said"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "\"You can't just blood youngsters",
+          "normalized_text": "\"you can't just blood youngsters"
+        },
+        {
+          "node_id": "node_000003",
+          "text": "you are the best in the position",
+          "normalized_text": "you are the best in the position"
+        },
+        {
+          "node_id": "node_000004",
+          "text": "In that international jersey should be the best",
+          "normalized_text": "in that international jersey should be the best"
+        },
+        {
+          "node_id": "node_000005",
+          "text": "the way things have panned out",
+          "normalized_text": "the way things have panned out"
+        },
+        {
+          "node_id": "node_000006",
+          "text": "\"But it has been difficult",
+          "normalized_text": "\"but it has been difficult"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000026",
+          "provenance_relation_ids": [
+            "rel_000026"
+          ]
+        },
+        {
+          "source": "node_000003",
+          "target": "node_000004",
+          "relation": "causes",
+          "relation_id": "rel_000027",
+          "provenance_relation_ids": [
+            "rel_000027"
+          ]
+        },
+        {
+          "source": "node_000005",
+          "target": "node_000006",
+          "relation": "causes",
+          "relation_id": "rel_000028",
+          "provenance_relation_ids": [
+            "rel_000028"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 6,
+        "edge_count": 3,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 3,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    },
+    {
+      "document_id": "xsum_000063",
+      "nodes": [
+        {
+          "node_id": "node_000001",
+          "text": "Judges ruled spills",
+          "normalized_text": "judges ruled spills"
+        },
+        {
+          "node_id": "node_000002",
+          "text": "the deterioration of water quality in the Loughor Estuary",
+          "normalized_text": "the deterioration of water quality in the loughor estuary"
+        }
+      ],
+      "edges": [
+        {
+          "source": "node_000001",
+          "target": "node_000002",
+          "relation": "causes",
+          "relation_id": "rel_000029",
+          "provenance_relation_ids": [
+            "rel_000029"
+          ]
+        }
+      ],
+      "statistics": {
+        "node_count": 2,
+        "edge_count": 1,
+        "is_empty": false,
+        "is_dag": true,
+        "cycle_count": 0,
+        "weakly_connected_components": 1,
+        "isolated_node_count": 0,
+        "max_causal_chain_length": 1
+      }
+    }
+  ]
+}

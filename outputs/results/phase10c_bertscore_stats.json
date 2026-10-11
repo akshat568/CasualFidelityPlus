@@ -1,0 +1,47 @@
+{
+  "metric_name": "BERTScore",
+  "metric_version": "bert-score-0.3.12",
+  "total_valid_perturbations_evaluated": 6,
+  "total_invalid_perturbations_excluded": 4,
+  "mean_bertscore_f1": 0.9698,
+  "median_bertscore_f1": 0.9864,
+  "min_bertscore_f1": 0.9205,
+  "max_bertscore_f1": 0.9926,
+  "mean_bertscore_precision": 0.9695,
+  "mean_bertscore_recall": 0.9702,
+  "mean_similarity_loss": 0.0302,
+  "breakdown_by_intended_label": {
+    "WEAKENED": {
+      "count": 2,
+      "mean_f1": 0.9872,
+      "median_f1": 0.9872,
+      "mean_similarity_loss": 0.0128
+    },
+    "DROPPED": {
+      "count": 2,
+      "mean_f1": 0.9892,
+      "median_f1": 0.9892,
+      "mean_similarity_loss": 0.0108
+    },
+    "EFFECT_CHANGED": {
+      "count": 1,
+      "mean_f1": 0.9205,
+      "median_f1": 0.9205,
+      "mean_similarity_loss": 0.0795
+    },
+    "CAUSE_CHANGED": {
+      "count": 1,
+      "mean_f1": 0.9456,
+      "median_f1": 0.9456,
+      "mean_similarity_loss": 0.0544
+    }
+  },
+  "configuration": {
+    "name": "BERTScore",
+    "version": "bert-score-0.3.12",
+    "implementation": "official bert-score package",
+    "model_type": "roberta-large",
+    "device": "cpu",
+    "batch_size": 16
+  }
+}

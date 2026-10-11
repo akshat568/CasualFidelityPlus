@@ -1,0 +1,94 @@
+{
+  "summary_sample": [
+    {
+      "document_id": "xsum_000001",
+      "summary_id": "xsum_000001_ref",
+      "summary_type": "reference",
+      "summary_text": "Rory McIlroy missed the halfway cut at the US PGA Championship for the first time in his career as Robert Streb and Jimmy Walker lead at Baltusrol.",
+      "source_word_count": 1225,
+      "summary_word_count": 27,
+      "compression_ratio": 0.0220408163
+    },
+    {
+      "document_id": "xsum_000002",
+      "summary_id": "xsum_000002_ref",
+      "summary_type": "reference",
+      "summary_text": "Politicians in the Irish Republic are in the final stages of campaigning ahead of Friday's general election.",
+      "source_word_count": 198,
+      "summary_word_count": 17,
+      "compression_ratio": 0.0858585859
+    },
+    {
+      "document_id": "xsum_000003",
+      "summary_id": "xsum_000003_ref",
+      "summary_type": "reference",
+      "summary_text": "There is a lot of talk that Tim Sherwood is close to being sacked by Aston Villa but I cannot understand why they would even contemplate getting rid of him at this stage of the season.",
+      "source_word_count": 1249,
+      "summary_word_count": 36,
+      "compression_ratio": 0.0288230584
+    },
+    {
+      "document_id": "xsum_000004",
+      "summary_id": "xsum_000004_ref",
+      "summary_type": "reference",
+      "summary_text": "Britain's Colin Oates took -66kg silver at the European Judo Championships after defeat by Georgia's Vazha Margvelashvili in Kazan, Russia.",
+      "source_word_count": 52,
+      "summary_word_count": 20,
+      "compression_ratio": 0.3846153846
+    },
+    {
+      "document_id": "xsum_000005",
+      "summary_id": "xsum_000005_ref",
+      "summary_type": "reference",
+      "summary_text": "Controversial plans to build a 103-turbine wind farm in the centre of Shetland could face a legal challenge.",
+      "source_word_count": 118,
+      "summary_word_count": 18,
+      "compression_ratio": 0.1525423729
+    },
+    {
+      "document_id": "xsum_000006",
+      "summary_id": "xsum_000006_ref",
+      "summary_type": "reference",
+      "summary_text": "Should India abolish the death penalty?",
+      "source_word_count": 403,
+      "summary_word_count": 6,
+      "compression_ratio": 0.0148883375
+    },
+    {
+      "document_id": "xsum_000007",
+      "summary_id": "xsum_000007_ref",
+      "summary_type": "reference",
+      "summary_text": "People visiting Cardiff were warned to expect delays on the road and rail with Wales' rugby and football teams are both in action on Saturday.",
+      "source_word_count": 251,
+      "summary_word_count": 25,
+      "compression_ratio": 0.0996015936
+    },
+    {
+      "document_id": "xsum_000008",
+      "summary_id": "xsum_000008_ref",
+      "summary_type": "reference",
+      "summary_text": "A woman in Kensington has been told to remove the red and white stripes she had painted on her house in protest over a rejected planning application.",
+      "source_word_count": 101,
+      "summary_word_count": 27,
+      "compression_ratio": 0.2673267327
+    },
+    {
+      "document_id": "xsum_000009",
+      "summary_id": "xsum_000009_ref",
+      "summary_type": "reference",
+      "summary_text": "Minerals preserved in diamond have revealed hints of the bright blue rocks that exist deep within the Earth.",
+      "source_word_count": 562,
+      "summary_word_count": 18,
+      "compression_ratio": 0.0320284698
+    },
+    {
+      "document_id": "xsum_000010",
+      "summary_id": "xsum_000010_ref",
+      "summary_type": "reference",
+      "summary_text": "Sinn Féin has said terms of reference drawn up by the head of the civil service for an investigation into the RHI debacle are short of what is required.",
+      "source_word_count": 172,
+      "summary_word_count": 29,
+      "compression_ratio": 0.1686046512
+    }
+  ]
+}

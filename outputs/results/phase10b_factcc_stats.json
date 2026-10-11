@@ -1,0 +1,33 @@
+{
+  "metric_name": "FactCC",
+  "metric_version": "factcc-manueldeprada",
+  "total_valid_perturbations_evaluated": 6,
+  "mean_original_score": 0.0001,
+  "median_original_score": 0.0001,
+  "mean_perturbed_score": 0.0016,
+  "median_perturbed_score": 0.0003,
+  "mean_score_delta": -0.0015,
+  "median_score_delta": -0.0002,
+  "breakdown_by_intended_label": {
+    "WEAKENED": {
+      "count": 2,
+      "mean_delta": -0.0015,
+      "median_delta": -0.0015
+    },
+    "DROPPED": {
+      "count": 2,
+      "mean_delta": -0.0029,
+      "median_delta": -0.0029
+    },
+    "EFFECT_CHANGED": {
+      "count": 1,
+      "mean_delta": -0.0004,
+      "median_delta": -0.0004
+    },
+    "CAUSE_CHANGED": {
+      "count": 1,
+      "mean_delta": 0.0,
+      "median_delta": -0.0
+    }
+  }
+}

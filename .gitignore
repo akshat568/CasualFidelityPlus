@@ -1,0 +1,96 @@
+# Environment & Credentials
+.env
+.env.local
+.env.*.local
+
+# Python artifacts & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.nox/
+.tox/
+
+# Frontend build outputs, dependencies & caches
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+*.tsbuildinfo
+
+# IDEs, Editors & Operating System artifacts
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Scratch scripts & temporary logs
+scratch/
+*.log
+outputs/*.log
+outputs/app.log
+
+# Raw datasets (keep directory structure)
+data/raw/*
+!data/raw/.gitkeep
+
+# Large experiment execution run directories (per-run raw logs & duplicate files)
+outputs/experiments/
+outputs/metrics/*
+!outputs/metrics/.gitkeep
+
+# Preserve authoritative research reports, manifests, and findings served by API
+!outputs/results/
+!outputs/results/*.md
+!outputs/results/*.json
+!outputs/results/*.jsonl
+!outputs/reports/
+!outputs/reports/*.md
+
+# Preserve baseline evaluation benchmark fixtures and human annotations required for tests
+!data/annotations/human_annotations.jsonl
+!data/processed/
+!data/processed/*.jsonl
+!data/processed/*.json
+
+# ML Model Checkpoints & Large Binary Files (weights are dynamically cached via HuggingFace)
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+*.h5
+*.tflite
+*.ckpt

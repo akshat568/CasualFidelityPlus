@@ -1,0 +1,99 @@
+{
+  "sample_size": 6,
+  "labels": [
+    "PRESERVED",
+    "REVERSED",
+    "WEAKENED",
+    "DROPPED",
+    "CAUSE_CHANGED",
+    "EFFECT_CHANGED",
+    "DISTORTED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "matrix": {
+    "PRESERVED": {
+      "PRESERVED": 0,
+      "REVERSED": 0,
+      "WEAKENED": 0,
+      "DROPPED": 0,
+      "CAUSE_CHANGED": 0,
+      "EFFECT_CHANGED": 0,
+      "DISTORTED": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+    },
+    "REVERSED": {
+      "PRESERVED": 0,
+      "REVERSED": 0,
+      "WEAKENED": 0,
+      "DROPPED": 0,
+      "CAUSE_CHANGED": 0,
+      "EFFECT_CHANGED": 0,
+      "DISTORTED": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+    },
+    "WEAKENED": {
+      "PRESERVED": 0,
+      "REVERSED": 0,
+      "WEAKENED": 2,
+      "DROPPED": 0,
+      "CAUSE_CHANGED": 0,
+      "EFFECT_CHANGED": 0,
+      "DISTORTED": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+    },
+    "DROPPED": {
+      "PRESERVED": 0,
+      "REVERSED": 0,
+      "WEAKENED": 1,
+      "DROPPED": 1,
+      "CAUSE_CHANGED": 0,
+      "EFFECT_CHANGED": 0,
+      "DISTORTED": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+    },
+    "CAUSE_CHANGED": {
+      "PRESERVED": 0,
+      "REVERSED": 0,
+      "WEAKENED": 0,
+      "DROPPED": 0,
+      "CAUSE_CHANGED": 1,
+      "EFFECT_CHANGED": 0,
+      "DISTORTED": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+    },
+    "EFFECT_CHANGED": {
+      "PRESERVED": 0,
+      "REVERSED": 0,
+      "WEAKENED": 0,
+      "DROPPED": 0,
+      "CAUSE_CHANGED": 0,
+      "EFFECT_CHANGED": 1,
+      "DISTORTED": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+    },
+    "DISTORTED": {
+      "PRESERVED": 0,
+      "REVERSED": 0,
+      "WEAKENED": 0,
+      "DROPPED": 0,
+      "CAUSE_CHANGED": 0,
+      "EFFECT_CHANGED": 0,
+      "DISTORTED": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+    },
+    "INSUFFICIENT_EVIDENCE": {
+      "PRESERVED": 0,
+      "REVERSED": 0,
+      "WEAKENED": 0,
+      "DROPPED": 0,
+      "CAUSE_CHANGED": 0,
+      "EFFECT_CHANGED": 0,
+      "DISTORTED": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+    }
+  },
+  "metadata": {
+    "description": "Confusion matrix mapping Phase 6 intended perturbation labels to Phase 9 independently detected labels.",
+    "note": "Evaluated on Phase 7 valid perturbations only."
+  }
+}

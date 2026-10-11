@@ -1,0 +1,29 @@
+{
+  "documents_examined": 100,
+  "summaries_examined": 100,
+  "source_relations_examined": 51,
+  "summary_relations_extracted": 2,
+  "source_relations_with_exact_matches": 0,
+  "aligned_count": 0,
+  "ambiguous_count": 0,
+  "below_threshold_count": 5,
+  "no_candidate_count": 46,
+  "unmatched_source_relations": 51,
+  "unmatched_summary_relations": 0,
+  "similarity_statistics": {
+    "mean_cause_similarity": 0.2273,
+    "mean_effect_similarity": 0.2777,
+    "mean_overall_alignment_score": 0.3195
+  },
+  "configuration": {
+    "embedding_model": "all-MiniLM-L6-v2",
+    "device": "cpu",
+    "cause_threshold": 0.5,
+    "effect_threshold": 0.5,
+    "overall_threshold": 0.6,
+    "ambiguity_margin": 0.05,
+    "cause_weight": 0.45,
+    "effect_weight": 0.45,
+    "relation_weight": 0.1
+  }
+}

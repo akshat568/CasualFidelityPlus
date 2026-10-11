@@ -1,0 +1,86 @@
+[
+  {
+    "perturbation_id": "xsum_000038_pert_000002",
+    "document_id": "xsum_000038",
+    "intended_label": "WEAKENED",
+    "detected_label": "WEAKENED",
+    "original_summary": "A grade II-listed bridge in Dorset that was blamed for causing severe floods is to be dismantled and replaced.",
+    "perturbed_summary": "A grade II-listed bridge in Dorset that was linked to severe floods is to be dismantled and replaced.",
+    "metric_name": "SummaCConv",
+    "original_score": 0.2876659035682678,
+    "perturbed_score": 0.2876659035682678,
+    "score_delta": 0.0,
+    "metadata": {
+      "phase9_analysis_id": "dist_pert_xsum_000038_pert_000002",
+      "phase9_evidence_strength": "MEDIUM",
+      "phase9_agreement": true,
+      "metric_version": "summac-0.0.4",
+      "metric_metadata": {
+        "name": "SummaCConv",
+        "version": "summac-0.0.4",
+        "model_type": "summac_conv",
+        "models": [
+          "vitc"
+        ],
+        "granularity": "sentence",
+        "device": "cpu"
+      }
+    }
+  },
+  {
+    "perturbation_id": "xsum_000038_pert_000003",
+    "document_id": "xsum_000038",
+    "intended_label": "DROPPED",
+    "detected_label": "WEAKENED",
+    "original_summary": "A grade II-listed bridge in Dorset that was blamed for causing severe floods is to be dismantled and replaced.",
+    "perturbed_summary": "A grade II-listed bridge in Dorset that was associated with severe floods is to be dismantled and replaced.",
+    "metric_name": "SummaCConv",
+    "original_score": 0.2876659035682678,
+    "perturbed_score": 0.2876659035682678,
+    "score_delta": 0.0,
+    "metadata": {
+      "phase9_analysis_id": "dist_pert_xsum_000038_pert_000003",
+      "phase9_evidence_strength": "MEDIUM",
+      "phase9_agreement": false,
+      "metric_version": "summac-0.0.4",
+      "metric_metadata": {
+        "name": "SummaCConv",
+        "version": "summac-0.0.4",
+        "model_type": "summac_conv",
+        "models": [
+          "vitc"
+        ],
+        "granularity": "sentence",
+        "device": "cpu"
+      }
+    }
+  },
+  {
+    "perturbation_id": "xsum_000038_pert_000005",
+    "document_id": "xsum_000038",
+    "intended_label": "EFFECT_CHANGED",
+    "detected_label": "EFFECT_CHANGED",
+    "original_summary": "A grade II-listed bridge in Dorset that was blamed for causing severe floods is to be dismantled and replaced.",
+    "perturbed_summary": "A grade II-listed bridge in Dorset that was blamed for causing Charminster bridge was previously untouchable.",
+    "metric_name": "SummaCConv",
+    "original_score": 0.2876659035682678,
+    "perturbed_score": 0.27001842856407166,
+    "score_delta": 0.0176,
+    "metadata": {
+      "phase9_analysis_id": "dist_pert_xsum_000038_pert_000005",
+      "phase9_evidence_strength": "HIGH",
+      "phase9_agreement": true,
+      "metric_version": "summac-0.0.4",
+      "metric_metadata": {
+        "name": "SummaCConv",
+        "version": "summac-0.0.4",
+        "model_type": "summac_conv",
+        "models": [
+          "vitc"
+        ],
+        "granularity": "sentence",
+        "device": "cpu"
+      }
+    }
+  }
+]

@@ -1,0 +1,169 @@
+project:
+  name: "CausalFidelityPlus"
+  environment: "development"
+  seed: 42
+
+dataset:
+  name: "xsum"
+  hf_dataset_path: "EdinburghNLP/xsum"
+  domain: "news"
+  language: "en"
+  split: "train"
+  development_sample_size: 100
+  random_seed: 42
+  streaming: true
+  causal_candidate_filter:
+    enabled: true
+    phrases:
+      - "caused"
+      - "causes"
+      - "causing"
+      - "led to"
+      - "resulted in"
+      - "due to"
+      - "because"
+      - "therefore"
+      - "as a result"
+      - "resulted from"
+      - "contributed to"
+      - "triggered"
+      - "owing to"
+      - "since"
+
+paths:
+  data_dir: "data"
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  annotations_dir: "data/annotations"
+  output_dir: "outputs"
+  metrics_dir: "outputs/metrics"
+  results_dir: "outputs/results"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  log_to_file: false
+  log_file: "outputs/app.log"
+
+causal_extraction:
+  enabled: true
+  method: "rule_based"
+  confidence_default: 0.90
+  candidate_only: true
+  max_documents: 100
+  output_file: "data/processed/causal_relations.jsonl"
+  stats_file: "data/processed/causal_relations_stats.json"
+  sample_output_file: "outputs/results/phase3_extraction_sample.json"
+
+causal_graph:
+  enabled: true
+  input_file: "data/processed/causal_relations.jsonl"
+  output_file: "data/processed/causal_graphs.jsonl"
+  stats_file: "data/processed/causal_graphs_stats.json"
+  sample_output_file: "outputs/results/phase4_graph_sample.json"
+
+summary_input:
+  enabled: true
+  input_file: "data/processed/xsum_dev.jsonl"
+  output_file: "data/processed/summary_inputs.jsonl"
+  stats_file: "data/processed/summary_inputs_stats.json"
+  sample_output_file: "outputs/results/phase5_summary_sample.json"
+
+perturbation:
+  enabled: true
+  input_summary_path: "data/processed/summary_inputs.jsonl"
+  input_causal_relations_path: "data/processed/causal_relations.jsonl"
+  output_path: "data/processed/perturbations.jsonl"
+  stats_path: "data/processed/perturbation_stats.json"
+  sample_path: "outputs/results/phase6_perturbation_sample.json"
+
+validation:
+  enabled: true
+  input_path: "data/processed/perturbations.jsonl"
+  output_path: "data/processed/validated_perturbations.jsonl"
+  stats_path: "data/processed/validation_stats.json"
+  sample_path: "outputs/results/phase7_validation_sample.json"
+
+alignment:
+  enabled: true
+  input_source_relations_path: "data/processed/causal_relations.jsonl"
+  input_summary_path: "data/processed/summary_inputs.jsonl"
+  output_summary_relations_path: "data/processed/summary_causal_relations.jsonl"
+  output_alignments_path: "data/processed/causal_alignments.jsonl"
+  stats_path: "data/processed/alignment_stats.json"
+  sample_path: "outputs/results/phase8_alignment_sample.json"
+  embedding_model: "all-MiniLM-L6-v2"
+  device: "cpu"
+  cause_threshold: 0.50
+  effect_threshold: 0.50
+  overall_threshold: 0.60
+  ambiguity_margin: 0.05
+  cause_weight: 0.45
+  effect_weight: 0.45
+  relation_weight: 0.10
+  batch_size: 32
+
+causal_distortion:
+  enabled: true
+  input_source_relations_path: "data/processed/causal_relations.jsonl"
+  input_summary_inputs_path: "data/processed/summary_inputs.jsonl"
+  input_perturbations_path: "data/processed/perturbations.jsonl"
+  input_validated_perturbations_path: "data/processed/validated_perturbations.jsonl"
+  input_summary_relations_path: "data/processed/summary_causal_relations.jsonl"
+  input_alignments_path: "data/processed/causal_alignments.jsonl"
+  output_analysis_path: "data/processed/causal_distortion_analysis.jsonl"
+  stats_path: "data/processed/distortion_stats.json"
+  sample_path: "outputs/results/phase9_distortion_sample.json"
+  confusion_matrix_path: "outputs/results/phase9_confusion_matrix.json"
+  cause_threshold: 0.50
+  effect_threshold: 0.50
+  overall_threshold: 0.60
+  weakened_trigger_words:
+    - "associated with"
+    - "linked to"
+    - "related to"
+    - "correlated with"
+    - "connected to"
+    - "coinciding with"
+    - "followed"
+
+metrics:
+  summac:
+    enabled: true
+    model_type: "summac_conv"
+    models:
+      - "vitc"
+    granularity: "sentence"
+    device: "cpu"
+    output_analysis_path: "data/processed/phase10a_summac_results.jsonl"
+    stats_path: "outputs/results/phase10a_summac_stats.json"
+    sample_path: "outputs/results/phase10a_summac_sample.json"
+
+  factcc:
+    enabled: true
+    model_path: "manueldeprada/FactCC"
+    device: "cpu"
+    max_length: 512
+    output_analysis_path: "data/processed/phase10b_factcc_results.jsonl"
+    stats_path: "outputs/results/phase10b_factcc_stats.json"
+    sample_path: "outputs/results/phase10b_factcc_sample.json"
+
+  bertscore:
+    enabled: true
+    model_type: "roberta-large"
+    device: "cpu"
+    batch_size: 16
+    output_analysis_path: "data/processed/phase10c_bertscore_results.jsonl"
+    stats_path: "outputs/results/phase10c_bertscore_stats.json"
+    sample_path: "outputs/results/phase10c_bertscore_sample.json"
+
+
+
+
+
+
+
+
+
+
+
