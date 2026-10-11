@@ -8,10 +8,28 @@
 [![TypeScript](https://img.shields.io/badge/types-TypeScript-3178c6.svg)](#technology-stack)
 [![Tests Passing](https://img.shields.io/badge/tests-292%20passed-brightgreen.svg)](#running-tests)
 
+**CausalFidelity+** is an NLP/LLM evaluation and stress-testing framework designed to investigate whether existing summarization-faithfulness metrics reliably detect cases where a summary preserves individual facts, entities, or events from a source document but alters the causal relationship between them.
+
+---
+
+## Live Demo & Deployment
+
+The CausalFidelity+ interactive research platform is live and publicly accessible:
+
+- **Live Application**: [https://casual-fidelity-plus.vercel.app](https://casual-fidelity-plus.vercel.app/)
+- **Backend Health Check**: [https://causalfidelityplus-api.onrender.com/api/v1/health](https://causalfidelityplus-api.onrender.com/api/v1/health)
+- **GitHub Repository**: [https://github.com/akshat568/CasualFidelityPlus](https://github.com/akshat568/CasualFidelityPlus)
+
+The web frontend is deployed on **Vercel** (React 19 + TypeScript + Vite) and communicates directly with the production FastAPI backend hosted on **Render** (Python 3.11 + Uvicorn).
+
+> [!NOTE]
+> The backend health-check endpoint reports service operational status and component readiness. To ensure efficient cloud memory utilization, heavy neural evaluation models (SummaC, FactCC, BERTScore) are loaded lazily on demand and may remain unloaded until an active evaluation pipeline is invoked.
+
 ---
 
 ## Table of Contents
 
+- [Live Demo & Deployment](#live-demo--deployment)
 - [Research Motivation](#research-motivation)
 - [Causal Faithfulness in Text Summarization](#causal-faithfulness-in-text-summarization)
   - [The Core Vulnerability](#the-core-vulnerability)
